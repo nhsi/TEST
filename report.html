@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>گزارش چالش بازسازی مه یاس</title>
+<style>
+@font-face{font-family:Yekan;src:url(preview/assets/yekan.woff2) format("woff2");font-display:swap}
+*{box-sizing:border-box}body{margin:0;background:#f5f4ef;color:#1b252c;font:1rem/1.9 Yekan,Tahoma,sans-serif}main{width:min(100% - 2rem,70rem);margin:2rem auto 4rem}header{padding:2rem;background:#1b252c;color:#fff;border-radius:.6rem}header p:first-child{color:#ffce75}h1,h2,h3{line-height:1.5}h1{margin:.3rem 0}h2{margin-top:2rem}a{color:#784700}header a{color:#ffce75}.card,figure{border:1px solid #d7d9d4;border-radius:.55rem;background:#fff;padding:1rem;margin:1rem 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr));gap:1rem}.grid>*{margin:0}img{width:100%;height:auto;display:block;border:1px solid #ddd;border-radius:.3rem}figcaption{margin-top:.5rem;color:#49555d}table{border-collapse:collapse;width:100%;background:#fff}th,td{padding:.45rem .65rem;border:1px solid #d7d9d4;text-align:start}code,bdi{unicode-bidi:isolate}code{font-size:.87em;overflow-wrap:anywhere}.note{border-inline-start:.3rem solid #9e6100;padding:.8rem 1rem;background:#fff}.links{display:flex;flex-wrap:wrap;gap:.5rem 1rem}
+</style>
+</head>
+<body><main>
+<header><p>چالش بازسازی وب‌سایت</p><h1>گروه تخصصی مه یاس</h1><p>بازطراحی صفحهٔ اصلی، اصلاح مسیر محصولات و مشاوره، و رسیدگی به صفحات وابسته به WooCommerce</p><div class="links"><a href="preview/index.html">باز کردن پیش‌نمایش</a><a href="README.md">راهنمای راه‌اندازی وردپرس</a></div></header>
+
+<h2>یافته‌ها و روش رفع</h2>
+<div class="card"><h3>مسیرهای قدیمی محصولات و خدمات</h3><p>در محتوای صفحهٔ محصولات با شناسهٔ <bdi>660</bdi>، مقصدهای <code dir="ltr">/elementor-1969/</code> و مسیر قدیمی جرثقیل متحرک دیده شدند. نامک‌های متناظر در صفحات منتشرشدهٔ نسخهٔ پشتیبان پیدا نشدند. بعضی لینک‌های تو‌در‌تو نیز همان شناسهٔ صفحه را با مسیری متفاوت ارجاع می‌دادند.</p><p>افزونهٔ <bdi>mahyas-refresh</bdi> پیوندهای شناخته‌شده را در محتوای وردپرس، ویجت Elementor و منو به نشانی صفحهٔ منتشرشده برمی‌گرداند. وقتی صفحهٔ اختصاصی در بسته موجود نیست، آدرس یک صفحهٔ مرتبط مانند ماشین‌آلات ساختمانی یا خدمات جایگزین می‌شود. در پیش‌نمایش، مسیر فهرست محصولات به تاورکرین با موفقیت باز شد.</p></div>
+<div class="card"><h3>امکان ثبت درخواست مشاورهٔ ناقص</h3><p>فرم صفحهٔ <bdi>10048</bdi> فقط ایمیل را الزامی کرده بود. پیام و موبایل اختیاری بودند و موبایل از ورودی متنی استفاده می‌کرد.</p><p>نام، موضوع و موبایل الزامی شدند. اعتبارسنجی فرم وردپرس با شناسهٔ همان ویجت انجام می‌شود. شمارهٔ ایران با ارقام فارسی، عربی یا لاتین پذیرفته می‌شود. پیش‌نمایش مقدار <bdi>123</bdi> را رد و نمونهٔ فارسی را قبول کرد. ذخیرهٔ درخواست در Elementor و ارسال ایمیل در وردپرس هنوز آزمون عملی ندارند.</p></div>
+<div class="card"><h3>صفحات حساب، سبد و پرداخت بدون WooCommerce</h3><p>صفحات <bdi>7، 8 و 9</bdi> فقط شورت‌کدهای WooCommerce را داشتند، در حالی که WooCommerce در گزینهٔ افزونه‌های فعال وجود نداشت.</p><p>وقتی شورت‌کد بومی ثبت نشده باشد، افزونه پیام در دسترس نبودن خرید آنلاین و لینک پیگیری را نمایش می‌دهد. اگر WooCommerce فعال شود، رفتار شورت‌کد بومی حفظ می‌شود. لینک پیگیری در پیش‌نمایش به صفحهٔ تماس رسید. ورود مدیر، حساب واقعی، سبد و پرداخت عملی هنوز آزمون نشده‌اند.</p></div>
+
+<figure><a href="evidence/before.jpg"><img src="evidence/before.jpg" alt="بازسازی سه ایراد از داده‌های اصلی"></a><figcaption>قبل از اصلاح · بازسازی شواهد از داده‌های پشتیبان. ظاهر سایت اصلی در این تصویر ثبت نشده است.</figcaption></figure>
+<div class="grid">
+<figure><a href="evidence/products.jpg"><img loading="lazy" src="evidence/products.jpg" alt="نمای بعد از اصلاح فهرست محصولات"></a><figcaption>بعد · مسیر محصولات</figcaption></figure>
+<figure><a href="evidence/consult.jpg"><img loading="lazy" src="evidence/consult.jpg" alt="نمای بعد از اصلاح فرم مشاوره"></a><figcaption>بعد · فرم مشاوره</figcaption></figure>
+<figure><a href="evidence/account.jpg"><img loading="lazy" src="evidence/account.jpg" alt="نمای بعد از اصلاح صفحهٔ حساب"></a><figcaption>بعد · وضعیت حساب در حالت غیرفعال</figcaption></figure>
+</div>
+
+<h2>بازطراحی و آزمون واکنش‌گرایی</h2>
+<p>اسلایدر چندتصویری صفحهٔ اصلی با بخش ثابت، یک تصویر واقعی از آرشیو و دو اقدام روشن برای مشاهدهٔ فعالیت‌ها و درخواست مشاوره جایگزین شد. ناوبری فارسی، دسترسی مستقیم به محصولات و خدمات، منوی جمع‌شوندهٔ موبایل، نمایش فوکوس و پیوند پرش به محتوا اضافه شدند. تغییرات وردپرس در افزونه‌ای جداگانه قرار دارند تا قالب اصلی و داده‌های Elementor قابل بازگشت باشند.</p>
+<table><thead><tr><th>اندازهٔ آزمون</th><th>ستون کارت‌ها</th><th>منو</th><th>اسکرول افقی</th></tr></thead><tbody>
+<tr><td><bdi>1280×850</bdi> دسکتاپ</td><td>۳</td><td>افقی</td><td>مشاهده نشد</td></tr>
+<tr><td><bdi>768×1024</bdi> تبلت</td><td>۲</td><td>افقی</td><td>مشاهده نشد</td></tr>
+<tr><td><bdi>390×844</bdi> موبایل</td><td>۱</td><td>جمع‌شونده، باز و بسته شد</td><td>مشاهده نشد</td></tr>
+</tbody></table>
+<div class="grid" style="margin-top:1rem">
+<figure><a href="evidence/desktop.jpg"><img loading="lazy" src="evidence/desktop.jpg" alt="صفحه اصلی در دسکتاپ"></a><figcaption>دسکتاپ</figcaption></figure>
+<figure><a href="evidence/tablet.jpg"><img loading="lazy" src="evidence/tablet.jpg" alt="صفحه اصلی در تبلت"></a><figcaption>تبلت</figcaption></figure>
+<figure><a href="evidence/mobile.jpg"><img loading="lazy" src="evidence/mobile.jpg" alt="صفحه اصلی در موبایل"></a><figcaption>موبایل</figcaption></figure>
+</div>
+
+<h2>بهینه‌سازی و حدود بازیابی</h2>
+<p>صفحهٔ اصلی پیش‌نمایش به اسکریپت اسلایدر وابسته نیست. فونت از بسته و با حجم حدود ۱۶ کیلوبایت سرو می‌شود. تصویر بالای صفحه در دسکتاپ حدود ۸۱ و در موبایل حدود ۵۱ کیلوبایت است. ابعاد تصاویر درج شده و کارت‌های پایین صفحه بارگذاری تنبل دارند. تصاویر و فایل‌های CSS محلی‌اند. این اعداد حجم فایل‌اند و امتیاز سرعت یا مقایسهٔ زمان بارگذاری وردپرس را نشان نمی‌دهند.</p>
+<p>استخراج ۱٬۳۹۰ فایل رسانه‌ای شکست خورد. فهرست مسیرهای آسیب‌دیده در <a href="evidence/unrecovered.txt">ضمیمهٔ بازیابی</a> موجود است. صفحهٔ بازطراحی‌شده از تصاویر سالم استفاده می‌کند و ممکن است صفحات قدیمی هنوز رسانهٔ ناقص داشته باشند. دیتابیس تحویلی گزیدهٔ محتوای عمومی است و اطلاعات کاربران، فرم‌های ثبت‌شده، سفارش‌ها و تاریخچهٔ آماریِ نسخهٔ اصلی را در بر ندارد.</p>
+<p class="note">نسخهٔ HTML در مرورگر محلی بررسی شد. راه‌اندازی وردپرس و آزمون یکپارچهٔ افزونه، ورود مدیر، ذخیرهٔ فرم و پرداخت، به‌علت در دسترس نبودن PHP و MariaDB و ناموفق بودن دریافت ابزارها، تأیید نشده‌اند.</p>
+</main></body></html>
